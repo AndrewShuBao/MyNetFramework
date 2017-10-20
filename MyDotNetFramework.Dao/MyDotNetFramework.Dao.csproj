@@ -53,6 +53,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyDotNetFramework.Domain\MyDotNetFramework.Domain.csproj">
+      <Project>{208DE194-D6A9-4711-B5AC-E8A1CC632422}</Project>
+      <Name>MyDotNetFramework.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyDotNetFramework.IDao\MyDotNetFramework.IDao.csproj">
       <Project>{4f3280ad-e7e0-4d04-b569-00775c7928b7}</Project>
       <Name>MyDotNetFramework.IDao</Name>

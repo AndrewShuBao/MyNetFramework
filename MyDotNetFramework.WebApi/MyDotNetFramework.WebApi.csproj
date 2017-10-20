@@ -256,6 +256,36 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyDotNetFramework.Common\MyDotNetFramework.Common.csproj">
+      <Project>{d6652450-a2b8-4a49-bb86-a3827c3eb028}</Project>
+      <Name>MyDotNetFramework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.Dao\MyDotNetFramework.Dao.csproj">
+      <Project>{3d22452c-12d6-4e26-a08e-7de7c48889b3}</Project>
+      <Name>MyDotNetFramework.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.DataMapping\MyDotNetFramework.DataMapping.csproj">
+      <Project>{6FBB86B1-5795-4AF9-9D8C-CA3A54483891}</Project>
+      <Name>MyDotNetFramework.DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.Domain\MyDotNetFramework.Domain.csproj">
+      <Project>{208de194-d6a9-4711-b5ac-e8a1cc632422}</Project>
+      <Name>MyDotNetFramework.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.IDao\MyDotNetFramework.IDao.csproj">
+      <Project>{4f3280ad-e7e0-4d04-b569-00775c7928b7}</Project>
+      <Name>MyDotNetFramework.IDao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.IService\MyDotNetFramework.IService.csproj">
+      <Project>{164f78bb-f86b-4815-b4db-ebb83fc4fe66}</Project>
+      <Name>MyDotNetFramework.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDotNetFramework.Service\MyDotNetFramework.Service.csproj">
+      <Project>{ebdc9014-6e82-454b-a645-085ddf0de390}</Project>
+      <Name>MyDotNetFramework.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
