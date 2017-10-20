@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using System.Reflection;
 using System.Web.Http;
@@ -26,14 +27,15 @@ namespace MyNetFramework.WebApi
         {
             AreaRegistration.RegisterAllAreas();
 
-
-            // 依赖注入
+            #region 依赖注入
             var builder = new ContainerBuilder();
             SetupResolveRules(builder);
+            builder.RegisterControllers(Assembly.GetExecutingAssembly());
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             var container = builder.Build();
             HttpConfiguration config = GlobalConfiguration.Configuration;
-            config.DependencyResolver = (new AutofacWebApiDependencyResolver(container));    
+            config.DependencyResolver = (new AutofacWebApiDependencyResolver(container));
+            #endregion
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
