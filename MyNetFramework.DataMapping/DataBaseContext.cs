@@ -21,7 +21,7 @@ namespace MyNetFramework.DataMapping
         public DataBaseContext()
             : base("Name=MyNetFramework", throwIfV1Schema: false)
         {
-            Database.SetInitializer<DataBaseContext>(null);
+            Database.SetInitializer(new CreateDatabaseIfNotExists<DataBaseContext>());
         }
 
 

@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using Newtonsoft.Json;
 
-namespace MyNetFramework.WebApi.Model
+namespace MyNetFramework.WebApi.Models
 {
+    // 用作 AccountController 操作的参数的模型。
+
     public class AddExternalLoginBindingModel
     {
         [Required]

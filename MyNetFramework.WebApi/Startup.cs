@@ -1,6 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
+
 [assembly: OwinStartup(typeof(MyNetFramework.WebApi.Startup))]
+
 namespace MyNetFramework.WebApi
 {
     public partial class Startup

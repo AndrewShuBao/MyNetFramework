@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using System;
+using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using MyNetFramework.DataMapping;
-using MyNetFramework.WebApi.Providers;
 using Owin;
-using System;
+using MyNetFramework.WebApi.Providers;
+using MyNetFramework.DataMapping;
 
 namespace MyNetFramework.WebApi
 {
@@ -41,8 +41,6 @@ namespace MyNetFramework.WebApi
 
             // 使应用程序可以使用不记名令牌来验证用户身份
             app.UseOAuthBearerTokens(OAuthOptions);
-
-
 
             // 取消注释以下行可允许使用第三方登录提供程序登录
             //app.UseMicrosoftAccountAuthentication(
