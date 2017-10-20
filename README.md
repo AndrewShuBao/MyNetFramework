@@ -1,4 +1,4 @@
-# MyNetFramework
+# MyDotNetFramework
 .Net MVVM Framework
 Asp.net WebApi+前端+EF6+Microsoft.AspNet.Identity 构建的MVVM框架
 
